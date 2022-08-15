@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicons/favicon-16x16.png">
+
+	<title>양산 보건소</title>
+
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />
+	<link rel="stylesheet" href="./assets/style/style.css" />
+</head>
+<body>
+<header class="base-header">
+  
+  <div class="go-back">
+    <button 
+      type="button" 
+      class="go-back__btn" 
+      onclick="history.back()"
+    >
+      <img 
+        src="./assets/images/icons/arrow-left-black.svg" 
+        alt="뒤로가기버튼" 
+      />
+    </button>
+  </div>
+  
+  <h1 class="logo">
+    
+      <img src="./assets/images/logo.svg" alt="양산시보건소 로고" />
+    
+    
+  </h1>
+</header>
+
+
+<div class="container page_certify part3">
+  <div class="certify_wrap">
+    <div class="form_box">
+      <div>
+        <input type="checkbox" id="ip_chk_all" /><label for="ip_chk_all">전체동의</label>
+      </div>
+    </div>
+    <div class="form_box">
+      <div>
+        <input type="checkbox" id="ip_chk_1" /><label for="ip_chk_1">K-Gate 개인정보 수집 및 이용 동의(필수)</label>
+      </div>
+      <button type="button" class="btn btn_sm btn_outline_cancel" onclick="location.href='/terms.html'">약관보기
+      </button>
+    </div>
+    <div class="form_box">
+      <div>
+        <input type="checkbox" id="ip_chk_2" /><label for="ip_chk_2">K-Gate 개인정보 제공 동의(필수)</label>
+      </div>
+      <button type="button" class="btn btn_sm btn_outline_cancel">약관보기</button>
+    </div>
+    <div class="form_box">
+      <div>
+        <input type="checkbox" id="ip_chk_3" /><label for="ip_chk_3">바이오 정보 수집 및 이용 동의(필수)</label>
+      </div>
+      <button type="button" class="btn btn_sm btn_outline_cancel">약관보기</button>
+    </div>
+    <div class="form_box">
+      <div>
+        <input type="checkbox" id="ip_chk_4" checked /><label for="ip_chk_4">바이오 원본 정보 수집 및 이용 동의(필수)</label>
+      </div>
+      <button type="button" class="btn btn_sm btn_outline_cancel">약관보기</button>
+    </div>
+  </div>
+
+  <div class="btn_wrap fix shadow">
+    <a href="certify_part4.html" class="btn btn_lg btn_disabled shadow">다음 단계로</a>
+    <!--    <a href="certify_part2.html" class="btn btn_lg btn_agree shadow">다음 단계로</a>-->
+  </div>
+</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./assets/script/common.js"></script>
+</body>
+</html>

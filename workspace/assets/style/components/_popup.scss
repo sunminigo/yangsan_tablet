@@ -1,0 +1,49 @@
+.popup {
+  @include position(fixed,$t:0,$r:0,$b:0,$l:0);
+  background: rgba(0,0,0,.5);
+
+  &-box {
+    @include position-center();
+    width: 90%;
+    max-width: 640px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: $gap;
+    background: $white;
+    overflow: hidden;
+  }
+
+  &-title {
+    text-align: center;
+    padding: $gap * 2;
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  &-container {
+    padding: $gap * 5;
+    border-top: 1px solid $light;
+    border-bottom: 1px solid $light;
+
+    &.text-center {
+      text-align: center;
+    }
+    .point {
+      color: $point;
+    }
+    p {
+      font-size: 32px;
+
+      + p {
+        margin-top: $gap * 2;
+      }
+    }
+  }
+
+  &-footer {
+    .btn-lg {
+      height: 100px;
+      font-size: 32px;
+    }
+  }
+}

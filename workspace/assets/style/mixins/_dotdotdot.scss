@@ -1,0 +1,19 @@
+@mixin dot($line:1, $line-height:null){
+	@if $line == 1 {
+		/* 한 줄 일때 */
+		display:inline-block;
+		width:100%;
+		white-space:nowrap;
+		text-overflow:ellipsis;
+	}@else{
+		/* 여러 줄 일때 */
+		white-space:normal;
+		max-height:($line-height * $line)+em;/* line-height * clamp = height(em) */
+		line-height:$line-height;
+		word-wrap:break-word;
+		display:-webkit-box;
+		-webkit-line-clamp:$line;
+		-webkit-box-orient:vertical;
+	}
+	overflow:hidden;
+}

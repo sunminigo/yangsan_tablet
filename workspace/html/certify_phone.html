@@ -1,0 +1,40 @@
+@@include('../include/head.html', {title: '양산 보건소'})
+@@include('../include/header.html', {
+  isLeft: true, 
+  pageTitle: false
+})
+
+<div class="container certify">
+  <div class="certify-phone">
+    <p class="certify-message">
+      해당 칸 입력 시<br>인증 받은 휴대폰 번호로<br>번호표 발급 및 안내를<br>받으실 수 있습니다.
+    </p>
+    <div class="certify-form">
+      <label for="user-name">이름</label>
+      <input type="text" id="user-name" placeholder="성함을 입력해주세요" />
+    </div>
+    <div class="certify-form">
+      <label for="user-phone">휴대전화번호</label>
+      <div>
+        <input type="text" id="user-phone" placeholder="예약한 휴대전화 번호를 입력해주세요" />
+        <button type="button" class="btn btn-outline-agree btn-md">인증번호 받기</button>
+      </div>
+    </div>
+    <div class="certify-form">
+      <label for="user-phone-chk">인증 번호</label>
+      <div>
+        <input type="text" id="user-phone-chk" placeholder="인증 번호를 입력해주세요" />
+        <button type="button" class="btn btn-outline-agree btn-md">인증 확인</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="btn-wrap column">
+    <a href="#" class="btn btn-lg btn-agree shadow">인증하고 접수</a>
+    <a href="#" class="btn btn-lg btn-outline-agree shadow">건너뛰고 접수</a>
+  </div>
+</div>
+
+@@include('../include/popup.html')
+@@include('../include/footer.html')

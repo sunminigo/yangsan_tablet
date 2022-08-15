@@ -1,0 +1,32 @@
+/*-----------------
+	main
+------------------*/
+.main {
+	padding: 0 $gap * 3;
+	margin: 0 auto;
+
+	&-visual {
+		width: 100%;
+	}
+	&-text {
+		padding: 40px 0 80px;
+		text-align: center;
+		font-size: 44px;
+		font-weight: bold;
+	}
+	.btn-wrap {
+		.btn {
+			height: $layout-height;
+			line-height: $layout-height;
+			font-size: 44px;
+			background-image: url('/assets/images/icons/arrow-right-color.svg');
+			background-repeat: no-repeat;
+			background-position: 98% center;
+			background-size: $base-font-size;
+
+			&:active, &:focus {
+				background-image: url('/assets/images/icons/arrow-right-white.svg');
+			}
+		}
+	}
+}

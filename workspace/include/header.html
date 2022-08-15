@@ -1,0 +1,24 @@
+<header class="base-header">
+  @@if (isLeft === true) {
+  <div class="go-back">
+    <button 
+      type="button" 
+      class="go-back__btn" 
+      onclick="history.back()"
+    >
+      <img 
+        src="./assets/images/icons/arrow-left-black.svg" 
+        alt="뒤로가기버튼" 
+      />
+    </button>
+  </div>
+  }
+  <h1 class="logo">
+    @@if (pageTitle === false) {
+      <img src="./assets/images/logo.svg" alt="양산시보건소 로고" />
+    }
+    @@if (pageTitle === true) {
+      @@pageTitleText
+    }
+  </h1>
+</header>

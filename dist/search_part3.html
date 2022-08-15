@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicons/favicon-16x16.png">
+
+	<title>양산 보건소</title>
+
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />
+	<link rel="stylesheet" href="./assets/style/style.css" />
+</head>
+<body>
+<header class="base-header">
+  
+  <div class="go-back">
+    <button 
+      type="button" 
+      class="go-back__btn" 
+      onclick="history.back()"
+    >
+      <img 
+        src="./assets/images/icons/arrow-left-black.svg" 
+        alt="뒤로가기버튼" 
+      />
+    </button>
+  </div>
+  
+  <h1 class="logo">
+    
+      <img src="./assets/images/logo.svg" alt="양산시보건소 로고" />
+    
+    
+  </h1>
+</header>
+
+
+<div class="container page_search part3">
+  <div class="search_wrap">
+    <p class="main_txt">2022년 2월 18일 11:30분 이용건</p>
+
+    <div class="bg_box">
+      <div>
+        <p class="title">예약자</p>
+        <p class="selected"><strong>홍길동</strong></p>
+      </div>
+      <div>
+        <p class="title">예약자 주민번호</p>
+        <p class="selected"><strong>000000-000000</strong></p>
+      </div>
+      <div>
+        <p class="title">예약자 전화번호</p>
+        <p class="selected"><strong>010-0000-0000</strong></p>
+      </div>
+      <div>
+        <p class="title">초진/재진 여부</p>
+        <p class="selected"><strong>초진</strong></p>
+      </div>
+      <div>
+        <p class="title">이용보건소</p>
+        <p class="selected"><strong>양산시 보건소 본원</strong></p>
+      </div>
+      <div>
+        <p class="title">진료 담당의</p>
+        <p class="selected">유재석 / 내과</p>
+      </div>
+      <div>
+        <p class="title">오시는 길</p>
+        <p class="selected">
+          <div id="map"></div>
+        </p>
+      </div>
+      <div>
+        <p class="title">주소</p>
+        <p class="selected">경남 양산시 삽량로 169</p>
+      </div>
+      <div>
+        <p class="title">전화번호</p>
+        <p class="selected">055-388-4000</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="btn_wrap fix shadow">
+    <a href="certify.html" class="btn btn_lg btn_outline_agree shadow">추가예약</a>
+    <a href="#" class="btn btn_lg btn_outline_agree shadow">예약취소</a>
+    <a href="index.html" class="btn btn_lg btn_agree shadow">확인</a>
+  </div>
+</div>
+
+<div class="popup_wrap">
+  <div class="popup">
+    <header class="popup_header">
+      <h2 class="title">보건소 예약 취소</h2>
+    </header>
+    <div class="popup_container text-center">
+      <p><strong class="point">[이름]</strong> 님</p>
+      <p><strong>2022년 2월 18일 11:30분<br/>양산시 보건소 본원<br/>유재석 / 내과</strong></p>
+      <p>예약을 취소 하시겠습니까?</p>
+    </div>
+    <footer class="popup_footer">
+      <div class="btn_wrap">
+        <a href="#" class="btn btn_lg btn_outline_agree shadow">예</a>
+        <a href="#" class="btn btn_lg btn_agree shadow">아니오</a>
+      </div>
+    </footer>
+  </div>
+</div>
+<div class="popup_wrap">
+  <div class="popup">
+    <header class="popup_header">
+      <h2 class="title">보건소 예약 취소</h2>
+    </header>
+    <div class="popup_container text-center">
+      <p><strong class="point">[이름]</strong> 님 예약 취소가 완료 되었습니다.</p>
+    </div>
+    <footer class="popup_footer">
+      <div class="btn_wrap">
+        <a href="#" class="btn btn_lg btn_agree shadow">확인</a>
+      </div>
+    </footer>
+  </div>
+</div>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./assets/script/common.js"></script>
+</body>
+</html>

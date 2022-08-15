@@ -1,0 +1,6 @@
+@mixin box-circle($size) {
+	width: $size;
+	height: $size;
+	@include vendorPrefix(border-radius,50%);
+	overflow:hidden;
+}

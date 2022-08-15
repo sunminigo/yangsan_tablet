@@ -1,0 +1,26 @@
+// 기본 포지션
+@mixin position($position,$t:null,$r:null,$b:null,$l:null) {
+	position:$position;
+	top:$t;
+	right:$r;
+	bottom:$b;
+	left:$l;
+}
+
+// 위치맞출때
+@mixin position-translate($position,$t:null,$l:null,$r:null,$b:null,$x:null,$y:null){
+	position:$position;
+	top:$t;
+	left:$l;
+	right:$r;
+	bottom:$b;
+	@include vendorPrefix(transform, translate($x, $y));
+}
+
+// 화면 정가운데 띄움
+@mixin position-center(){
+	position:absolute;
+	top:50%;
+	left:50%;
+	@include vendorPrefix(transform, translate(-50%,-50%));
+}

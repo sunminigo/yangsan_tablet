@@ -1,0 +1,33 @@
+/*-----------------
+	header
+------------------*/
+.base-header {
+	position: relative;
+	text-align: center;
+	padding: $gap * 3;
+	border-bottom: 1px solid $light;
+
+	.go-back {
+		@include position-translate(absolute, $t:50%, $l:0, $x:0, $y:-50%);
+		padding: $gap * 3;
+
+		img {
+			height: 33px;
+		}
+	}
+	.logo {
+		img {
+			height: 48px;
+		}
+	}
+}
+
+/*-----------------
+	container
+------------------*/
+.container {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 $gap * 5 200px;
+}

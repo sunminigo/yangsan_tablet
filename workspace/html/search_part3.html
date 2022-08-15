@@ -1,0 +1,63 @@
+@@include('../include/head.html', {title: '양산 보건소'})
+@@include('../include/header.html', {
+  isLeft: true, 
+  pageTitle: false
+})
+
+<div class="container page_search part3">
+  <div class="search_wrap">
+    <p class="main_txt">2022년 2월 18일 11:30분 이용건</p>
+
+    <div class="bg_box">
+      <div>
+        <p class="title">예약자</p>
+        <p class="selected"><strong>홍길동</strong></p>
+      </div>
+      <div>
+        <p class="title">예약자 주민번호</p>
+        <p class="selected"><strong>000000-000000</strong></p>
+      </div>
+      <div>
+        <p class="title">예약자 전화번호</p>
+        <p class="selected"><strong>010-0000-0000</strong></p>
+      </div>
+      <div>
+        <p class="title">초진/재진 여부</p>
+        <p class="selected"><strong>초진</strong></p>
+      </div>
+      <div>
+        <p class="title">이용보건소</p>
+        <p class="selected"><strong>양산시 보건소 본원</strong></p>
+      </div>
+      <div>
+        <p class="title">진료 담당의</p>
+        <p class="selected">유재석 / 내과</p>
+      </div>
+      <div>
+        <p class="title">오시는 길</p>
+        <p class="selected">
+          <div id="map"></div>
+        </p>
+      </div>
+      <div>
+        <p class="title">주소</p>
+        <p class="selected">경남 양산시 삽량로 169</p>
+      </div>
+      <div>
+        <p class="title">전화번호</p>
+        <p class="selected">055-388-4000</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="btn_wrap fix shadow">
+    <a href="certify.html" class="btn btn_lg btn_outline_agree shadow">추가예약</a>
+    <a href="#" class="btn btn_lg btn_outline_agree shadow">예약취소</a>
+    <a href="index.html" class="btn btn_lg btn_agree shadow">확인</a>
+  </div>
+</div>
+
+@@include('../include/popup2.html')
+@@include('../include/popup3.html')
+@@include('../include/footer.html')

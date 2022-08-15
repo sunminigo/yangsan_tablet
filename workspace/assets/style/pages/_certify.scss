@@ -1,0 +1,78 @@
+/*-----------------
+  certify
+------------------*/
+.certify {
+  padding-bottom: $gap * 5;
+
+  &-message {
+    text-align: center;
+    font-size: 40px;
+    padding: $gap * 5;
+  }
+
+  .main_txt {
+    margin-bottom: $gap*2;
+    font-size: 16px;
+
+    strong {
+      color: $point;
+    }
+  }
+
+  .sub_txt {
+    margin: $gap*2 0;
+    color: #888;
+    font-size: 14px;
+  }
+
+  &-form {
+    font-size: 12px;
+    margin-top: 44px;
+    margin-bottom: $gap*2;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: $gap * 2;
+    }
+
+    label {
+      display: block;
+      margin: 0 0 $gap * 3;
+      font-size: 32px;
+      font-weight: 700;
+    }
+  }
+
+  .btn-wrap {
+    margin-top: 100px;
+  }
+
+  &-phone {}
+  &-address {}
+  &-finish {
+    text-align: center;
+    margin-top: 150px;
+
+    &-message {
+      font-size: 44px;
+      font-weight: 700;
+
+      span {
+        color: $point;
+      }
+    }
+    &-selected {
+      padding: $gap * 5;
+      font-size: 52px;
+      line-height: 2;
+      margin: 24px 0;
+      border-radius: 10px;
+      background: $light;
+
+      p+p {
+        margin-top: $gap * 3;
+      }
+    }
+  }
+}

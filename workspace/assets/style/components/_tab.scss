@@ -1,0 +1,55 @@
+.tab_box {
+	.tab_menu {
+		ul {
+			margin: 2.25rem 0; // 36px
+			padding: 0 1rem; // 16px
+			white-space: nowrap;
+			overflow-x: auto;
+			-ms-overflow-style: none; /* IE and Edge */
+			scrollbar-width: none; /* Firefox */
+			&::-webkit-scrollbar {
+				display: none; /* Chrome, Safari, Opera*/
+			}
+		}
+		li {
+			display: inline-block;
+			text-align: center;
+			width: 10.625rem; //170px
+			height: 3.75rem; //60px
+			line-height: 3.75rem; //60px
+			font-size: 1.5rem; //24px
+			border: 1px solid #bcbcbc;
+			border-radius: 30px;
+
+			&.active {
+				background: #8d91a8;
+				color: #fff;
+			}
+		}
+	}
+	.tab_content {
+		& > div {
+			display: flex;
+			justify-content: center;
+			padding: 0 1rem;
+		}
+		ul {
+			text-align: center;
+			margin: 0 0 0 -10px;
+		}
+		.item {
+			display: inline-block;
+			width: calc((100% / 2) - 12px);
+			margin: 0 0 13px 10px;
+			font-size: 1.375rem; //22px
+
+			.thumbnail {
+				// width: 17.25rem; //276px
+				height: 11.5rem; //184px
+				margin-bottom: 0.625rem; //10px
+				border-radius: 1rem;
+				overflow: hidden;
+			}
+		}
+	}
+}

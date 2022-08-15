@@ -1,0 +1,53 @@
+/*-----------------
+	personal
+------------------*/
+.personal {
+  text-align: center;
+  margin: 0 auto;
+
+  &-visual {
+    width: 100%;
+    margin-top: 100px;
+  }
+  &-checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 100px;
+
+    label {
+      font-weight: bold;
+    }
+    .btn {
+      padding: $gap $gap * 2;
+      font-size: 20px;
+      color: $white;
+      background: $grey3;
+      border-radius: 4px !important;
+    }
+  }
+  input {
+    text-align: center;
+  }
+  .btn-wrap {
+    margin-top: 55px;
+  }
+}
+
+/*-----------------
+	terms
+------------------*/
+.terms {
+  &-content {
+    padding-top: 48px;
+    font-size: 32px;
+
+    .custom-box {
+      margin-top: 50px;
+
+      label {
+        font-size: inherit;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+/*---------------
+	BOX
+---------------*/
+img {
+	image-rendering: -moz-auto;
+	image-rendering: -o-auto;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: auto;
+	-ms-interpolation-mode: nearest-neighbor;
+}
+
+// 기본 박스
+.box {
+	position: relative;
+	background: $white;
+	box-shadow: $box-shadow;
+	border-radius: $base-radius;
+}
+
+.img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+}

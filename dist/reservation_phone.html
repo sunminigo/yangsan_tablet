@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicons/favicon-16x16.png">
+
+	<title>양산 보건소</title>
+
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />
+	<link rel="stylesheet" href="./assets/style/style.css" />
+</head>
+<body>
+<header class="base-header">
+  
+  <div class="go-back">
+    <button 
+      type="button" 
+      class="go-back__btn" 
+      onclick="history.back()"
+    >
+      <img 
+        src="./assets/images/icons/arrow-left-black.svg" 
+        alt="뒤로가기버튼" 
+      />
+    </button>
+  </div>
+  
+  <h1 class="logo">
+    
+      <img src="./assets/images/logo.svg" alt="양산시보건소 로고" />
+    
+    
+  </h1>
+</header>
+
+
+<div class="container reservation">
+  <div class="reservation-phone">
+    <p class="reservation-message">
+      해당 칸 입력 시<br>인증 받은 휴대폰 번호로<br>번호표 발급 및 안내를<br>받으실 수 있습니다.
+    </p>
+    <div class="reservation-form">
+      <label for="user-name">이름</label>
+      <input type="text" id="user-name" placeholder="성함을 입력해주세요" />
+    </div>
+    <div class="reservation-form">
+      <label for="user-phone">휴대전화번호</label>
+      <div>
+        <input type="text" id="user-phone" placeholder="예약한 휴대전화 번호를 입력해주세요" />
+        <button type="button" class="btn btn-outline-agree btn-md">인증번호 받기</button>
+      </div>
+    </div>
+    <div class="reservation-form">
+      <label for="user-phone-chk">인증 번호</label>
+      <div>
+        <input type="text" id="user-phone-chk" placeholder="인증 번호를 입력해주세요" />
+        <button type="button" class="btn btn-outline-agree btn-md">인증 확인</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="btn-wrap column">
+    <a href="search_part2.html" class="btn btn-lg btn-agree shadow">인증하고 접수</a>
+   <a href="#" class="btn btn-lg btn-outline-agree shadow">건너뛰고 접수</a>
+  </div>
+</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./assets/script/common.js"></script>
+</body>
+</html>

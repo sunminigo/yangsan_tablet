@@ -1,0 +1,79 @@
+/*---------------
+	INPUT
+---------------*/
+// placeholder custom
+input::-webkit-input-placeholder {
+	font-size: 43px;
+	color: $grey2;
+}
+input:-ms-input-placeholder {
+	font-size: 43px;
+	color: $grey2;
+}
+textarea::-webkit-input-placeholder {
+	font-size: 43px;
+	color: $grey2;
+}
+textarea:-ms-input-placeholder {
+	font-size: 43px;
+	color: $grey2;
+}
+
+// checkbox custom
+input {
+	&[type="checkbox"] {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		cursor: pointer;
+		width: $base-font-size;
+		height: $base-font-size;
+		background: #fff;
+		border: 1px solid $lightGrey;
+		border-radius: calc($gap / 2);
+		outline: 0;
+
+		&:checked {
+			content: '';
+			position: relative;
+			top: 0;
+			left: 0;
+			width: $base-font-size;
+			height: $base-font-size;
+			border: 1px solid $point;
+			background: $point url('/assets/images/icons/check.svg') no-repeat center / 70%;
+		}
+	}
+
+	&[type="text"] {
+		width: 100%;
+		height: $layout-height;
+		line-height: $layout-height;
+		padding: 0 $gap * 2;
+		font-size: 43px;
+		border: 3px solid $lightGrey;
+		border-radius: calc($gap / 2);
+	}
+}
+
+label {
+	color: $darkgrey;
+	font-size: 44px;
+}
+
+// input
+.input-box {
+	display: flex;
+	gap: 44px;
+
+	&.column {
+		flex-direction: column;
+	}
+}
+
+// check or radio + label
+.custom-box {
+	display: flex;
+	align-items: center;
+	gap: $gap * 2;
+}

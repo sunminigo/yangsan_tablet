@@ -1,0 +1,40 @@
+@@include('../include/head.html', {title: '양산 보건소'})
+@@include('../include/header.html', {
+  isLeft: true, 
+  pageTitle: false
+})
+
+<div class="container certify">
+  <div class="certify-address">
+    <p class="certify-message">
+      양산시 보건소를 이용하시는 고객님의<br/>주민등록번호, 주민등록상 주소지를<br/>입력해주세요.
+    </p>
+
+    <div class="certify-form">
+      <label for="certify-resident">생년 월일</label>
+      <input type="text" id="certify-resident" placeholder="생년월일 8자리를 입력하여 주십시오&#13;&#10;EX) 19921119" />
+    </div>
+    <div class="certify-form">
+      <label for="certify-address">주소</label>
+      <div>
+        <input type="text" id="certify-address" placeholder="주소지 검색" />
+        <button type="button" class="btn btn-outline-agree btn-md">주소지 찾기</button>
+      </div>
+    </div>
+    <div class="certify-form">
+      <label for="certify-phone-chk">상세 주소 입력</label>
+      <div>
+        <input type="text" id="ip-phone-chk" placeholder="상세주소를 입력하세요"/>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="btn-wrap column">
+    <a href="#" class="btn btn-lg btn-disabled shadow">확인</a>
+    <!-- 전부 입력 시 -->
+    <!-- <a href="#" class="btn btn-lg btn-agree shadow">확인</a> -->
+  </div>
+</div>
+
+@@include('../include/footer.html')
