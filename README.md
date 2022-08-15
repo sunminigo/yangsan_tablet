@@ -1,5 +1,5 @@
 # 양산시 보건소
-> #### SITE [link](https://sunminigo.github.io/yangsan/dist/index.html)
+> #### SITE [link](https://sunminigo.github.io/yangsan_tablet/dist/index.html)
 
 > #### 페이지
 > - 개인정보동의: personal_information.html
