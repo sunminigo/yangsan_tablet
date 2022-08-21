@@ -41,12 +41,15 @@ $(function() {
       $('#selectTime').text($(this).text());
 
       let selectDate = $("#selectDay").text();
-      let selectTime = $("#selectTime").text();
 
-      $('#dateTime').addClass('select-txt').text(`${selectDate} ${selectTime}`);
       $('.time-box').slideUp();
     } else {
-      $(this).parents('li').find('.text').addClass('select-txt').text($(this).text())
+      $(this).parents('li').find('.text').addClass('select-txt').html(()=>{
+        if ($(this).parents('li')[0].dataset.menu) {          
+          return `${$(this).parents('li')[0].dataset.menu} <span class="text--point">${$(this).text()}</span>`
+        }
+        return `<span class="text--point">${$(this).text()}</span>`
+      })
       $(this).parent().slideUp().parent().removeClass('open');
       $(this).parents('li').next().addClass('open').find('.submenu').slideDown();
     }
@@ -77,6 +80,7 @@ $(function() {
 /* Calendar */
 $('#datepicker').datepicker({
   dateFormat: "yy.mm.dd",
+  showOn: true,
   showOtherMonths: true,
   selectOtherMonths: true,
   showMonthAfterYear: true,
@@ -99,14 +103,10 @@ $('#datepicker').datepicker({
     //데이터를 먼저 가져오고 (숫자로 넘어옴)
     let date = new Date($("#datepicker").datepicker({dateFormat:"yy.mm.dd"}).val());
     let week = new Array("일","월","화","수","목","금","토");
-    let selectTime = $("#selectTime").text();
 
-    $("#selectDay").text(`${d} (${week[date.getDay()]})`);
-
-    if (selectTime.indexOf('선택') === -1) {
-      $('#dateTime').addClass('select-txt').text(`${d} (${week[date.getDay()]}) ${selectTime}`)
-    }
-    $('.calendar-box').slideUp(500);
-    $('.time-box').slideDown(500);
+    $('#date').html(`<span class="text--point">매주 ${week[date.getDay()]}요일, 주1회<br> 10:00~12:00/4주 과정</span>`);
+    $('#selectDay').html(`매주 ${week[date.getDay()]}요일, 주1회 10:00~12:00/4주 과정`);
+    $('.calendar-box').slideToggle(500);
+    // $('.accordion-list li').removeClass('open');
   }
 });

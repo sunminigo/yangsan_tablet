@@ -37,26 +37,40 @@
 
 
 <div class="container reservation">
-  <div class="reservation-clinic">
+  <div class="dropdown">
     <ul id="accordion" class="accordion-list">
       <li>
         <button type="button" class="link">
-          <p class="text">진료 과 선택</p>
+          <p class="text"><span class="text--point">보건사업</span> 선택</p>
         </button>
+
         <div class="submenu">
-          <button type="button" class="item">내과</button>
-          <button type="button" class="item">정형외과</button>
-          <button type="button" class="item">정신과</button>
+          <button type="button" class="item">모자보건</button>
+          <button type="button" class="item">건강증진</button>
+          <button type="button" class="item">정신 보건</button>
         </div>
       </li>
       <li>
         <button type="button" class="link">
-          <p class="text">선택한 과 담당의 선택</p>
+          <p class="text"><span class="text--point">선택한 보건사업 프로그램</span> 선택</p>
         </button>
         <div class="submenu">
-          <button type="button" class="item">선택안함</button>
-          <button type="button" class="item">유재석</button>
-          <button type="button" class="item">정준하</button>
+          <button type="button" class="item">임산부 영유아 건강교실 운영</button>
+          <button type="button" class="item">모유수유클리닉 운영</button>
+          <button type="button" class="item">초보부모 멘토스쿨 운영</button>
+        </div>
+      </li>
+      <li>
+        <button type="button" class="link">
+          <p id="date" class="text"><span class="text--point">보건사업 프로그램</span> 날짜 / 시간</p>
+        </button>
+        <div class="submenu">
+          <div class="calendar-box">
+            <p id="selectDay">
+              예약 날짜를 선택하세요
+            </p>
+            <div id="datepicker"></div>
+          </div>
         </div>
       </li>
     </ul>

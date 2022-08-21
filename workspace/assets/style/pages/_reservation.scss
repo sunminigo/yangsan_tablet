@@ -2,10 +2,13 @@
 	reservation
 ------------------*/
 .reservation {
-  padding-bottom: 200px;
+  padding: 60px 0 250px;
 
   .accordion-list {
     li {
+      border: 1px solid $light;
+      box-shadow: 0px 1px 2px rgba(97, 97, 97, 0.2), 0px 2px 4px rgba(97, 97, 97, 0.2);
+
       &.open {
         .link {
           color: $darkgrey;
@@ -67,7 +70,6 @@
           color: $darkgrey;
           padding: $gap * 4 $gap * 5;
           font-size: 38px;
-          background: rgba(0, 0, 0, 0.02);
           border-bottom: 1px solid $light;
 
           &:hover {
@@ -78,10 +80,6 @@
             margin-right: 12px;
           }
         }
-      }
-
-      .toggle {
-        display: none;
       }
     }
   }
@@ -97,19 +95,29 @@
       transition: all 0.4s ease;
     }
 
+    #selectDay {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100%;
+      height: 106px;
+      font-size: 32px;
+      font-weight: bold;
+      background: $light;
+    }
     .ui-datepicker {
       margin: 0 auto;
 
       table {
         margin-top: 12px;
-        font-size: 16px;
+        font-size: 32px;
 
         th {
           padding: 6px 0 8px;
           font-weight: normal;
           border: 0;
           background: #eee;
-          font-size: 16px;
+          font-size: 32px;
 
           &:first-child {
             border-radius: 10px 0 0 10px;
@@ -121,7 +129,7 @@
         }
 
         td {
-          padding: 12px 0 0;
+          padding: 44px 0 0;
         }
       }
 
@@ -131,12 +139,12 @@
       }
 
       .ui-datepicker-title {
-        line-height: .7;
-        font-size: 12px;
+        font-size: 32px;
         font-weight: normal;
 
         .ui-datepicker-month {
-          font-size: 16px;
+          display: block;
+          font-size: 32px;
           font-weight: bold;
         }
       }
@@ -147,7 +155,9 @@
         border: none;
 
         .ui-icon {
-          background: url('/assets/images/icons/arrow-left.png') no-repeat center / 20px;
+          background: url(/assets/images/icons/arrow-left-black.svg) no-repeat center / 16px;
+          width: 52px;
+          height: 52px;
         }
 
         .ui-datepicker-next {
@@ -166,8 +176,9 @@
       }
 
       .ui-state-default {
-        width: 35px;
-        height: 34px;
+        text-align: center;
+        height: 44px;
+        line-height: 0.8;
         font-weight: bold;
       }
 
@@ -178,71 +189,20 @@
           content: '오늘';
           text-align: center;
           position: absolute;
-          top: 5px;
-          width: 34px;
-          font-size: 9px;
-        }
-
-        .ui-state-default {
-          background: rgba(0, 171, 78, 0.2);
-          border-radius: 100%;
-          font-weight: 700;
+          top: 20%;
+          width: 100%;
+          font-size: 16px;
         }
       }
 
       .ui-state-active {
-        color: #fff;
         font-weight: 700;
-        background: #00AB4E !important;
-        border-radius: 100%;
+        background: rgba(0, 171, 78, 0.2) !important;
+        border-radius: 100px;
       }
 
       .ui-datepicker-week-end:last-child a {
         color: #D2232A;
-      }
-    }
-  }
-
-  .time-box {
-    padding: 13px 20px;
-
-    .time {
-      display: flex;
-
-      h3 {
-        width: 60px;
-        color: #00AB4E;
-        font-size: 16px;
-      }
-
-      .times {
-        margin: 0 0 0 -12px;
-
-        li {
-          display: inline-block;
-          margin: 0 0 12px;
-          padding: 0 10px 4px;
-
-          input[type="radio"] {
-            display: none;
-
-            & + label {
-              padding: 4px 6px;
-              font-weight: bold;
-            }
-
-            &:disabled + label {
-              color: rgba(#000, .5);
-            }
-
-            &:checked + label {
-              padding: 4px 6px;
-              color: #fff;
-              background: #00AB4E;
-              border-radius: 100px;
-            }
-          }
-        }
       }
     }
   }

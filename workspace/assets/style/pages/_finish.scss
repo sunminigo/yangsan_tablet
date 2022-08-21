@@ -9,17 +9,19 @@
   font-weight: 700;
   
   &-message {
-      font-size: 62px;
+      font-size: 64px;
       color: $default;
 
-    &__user {
+    &__first {
       span {
         color: $point;
       }
     }
+    &__seconds {
+      margin: 24px 0;
+    }
     &__text {
       line-height: 1.5;
-      margin-top: 24px;
       font-size: 44px;
     }
   }
