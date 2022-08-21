@@ -376,7 +376,7 @@ input[type=checkbox]:checked {
 	width: 52px;
 	height: 52px;
 	border: 1px solid #00AB4E;
-	background: #00AB4E url("/assets/images/icons/check.svg") no-repeat center/70%;
+	background: #00AB4E url("../../assets/images/icons/check.svg") no-repeat center/70%;
 }
 input[type=text] {
 	width: 100%;
@@ -725,13 +725,13 @@ label {
 	height: 120px;
 	line-height: 120px;
 	font-size: 44px;
-	background-image: url("/assets/images/icons/arrow-right-color.svg");
+	background-image: url("../../assets/images/icons/arrow-right-color.svg");
 	background-repeat: no-repeat;
 	background-position: 98% center;
 	background-size: 52px;
 }
 .main .btn-wrap .btn:active, .main .btn-wrap .btn:focus {
-	background-image: url("/assets/images/icons/arrow-right-white.svg");
+	background-image: url("../../assets/images/icons/arrow-right-white.svg");
 }
 
 /*-----------------
@@ -771,7 +771,7 @@ label {
 	content: "";
 	width: 52px;
 	height: 52px;
-	background-image: url("/assets/images/icons/arrow-up-black.svg");
+	background-image: url("../../assets/images/icons/arrow-up-black.svg");
 	background-size: 52px;
 	background-repeat: no-repeat;
 	background-position: 98% center;
@@ -867,7 +867,7 @@ label {
 	border: none;
 }
 .reservation .calendar-box .ui-datepicker .ui-widget-header .ui-icon {
-	background: url(/assets/images/icons/arrow-left-black.svg) no-repeat center/16px;
+	background: url('../../assets/images/icons/arrow-left-black.svg') no-repeat center/16px;
 	width: 52px;
 	height: 52px;
 }
@@ -908,7 +908,7 @@ label {
 }
 .reservation-clinic .accordion-list .item:before {
 	content: "";
-	background: url("/assets/images/icons/hospital.svg") no-repeat center/64px;
+	background: url("../../assets/images/icons/hospital.svg") no-repeat center/64px;
 	width: 64px;
 	height: 64px;
 	margin-right: 16px;
