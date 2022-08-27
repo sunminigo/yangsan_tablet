@@ -19,13 +19,13 @@
 			height: $layout-height;
 			line-height: $layout-height;
 			font-size: 44px;
-			background-image: url('/assets/images/icons/arrow-right-color.svg');
+			background-image: url('../images/icons/arrow-right-color.svg');
 			background-repeat: no-repeat;
 			background-position: 98% center;
 			background-size: $base-font-size;
 
 			&:active, &:focus {
-				background-image: url('/assets/images/icons/arrow-right-white.svg');
+				background-image: url('../images/icons/arrow-right-white.svg');
 			}
 		}
 	}

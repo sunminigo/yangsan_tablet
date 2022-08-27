@@ -40,7 +40,7 @@
           content: '';
           width: 52px;
           height: 52px;
-          background-image: url('/assets/images/icons/arrow-up-black.svg');
+          background-image: url('../images/icons/arrow-up-black.svg');
           background-size: 52px;
           background-repeat: no-repeat;
           background-position: 98% center;
@@ -155,7 +155,7 @@
         border: none;
 
         .ui-icon {
-          background: url(/assets/images/icons/arrow-left-black.svg) no-repeat center / 16px;
+          background: url('../images/icons/arrow-left-black.svg') no-repeat center / 16px;
           width: 52px;
           height: 52px;
         }
@@ -212,7 +212,7 @@
       .item {
         &:before {
           content: '';
-          background: url('/assets/images/icons/hospital.svg') no-repeat center / 64px;
+          background: url('../images/icons/hospital.svg') no-repeat center / 64px;
           width: 64px;
           height: 64px;
           margin-right: $gap * 2;

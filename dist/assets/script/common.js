@@ -38,12 +38,13 @@ $(function() {
     let subAcc = $(this).parents()
 
     if (subAcc.hasClass('toggle')) {
+      console.log(1111)
       $('#selectTime').text($(this).text());
 
       let selectDate = $("#selectDay").text();
 
-      $('.time-box').slideUp();
     } else {
+      console.log(222)
       $(this).parents('li').find('.text').addClass('select-txt').html(()=>{
         if ($(this).parents('li')[0].dataset.menu) {          
           return `${$(this).parents('li')[0].dataset.menu} <span class="text--point">${$(this).text()}</span>`
@@ -106,7 +107,9 @@ $('#datepicker').datepicker({
 
     $('#date').html(`<span class="text--point">매주 ${week[date.getDay()]}요일, 주1회<br> 10:00~12:00/4주 과정</span>`);
     $('#selectDay').html(`매주 ${week[date.getDay()]}요일, 주1회 10:00~12:00/4주 과정`);
-    $('.calendar-box').slideToggle(500);
+
+    // $('.calendar-box').slideToggle(500);
+
     // $('.accordion-list li').removeClass('open');
   }
 });
